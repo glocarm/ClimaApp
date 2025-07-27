@@ -1,0 +1,262 @@
+/* estilo.css */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #09c593; /* Color de fondo suave */
+  margin: 0;
+  padding: 5px;
+}
+.container-fluid {
+  background-color: rgb(245, 246, 244);
+}
+#nav-link {
+  color: #181919;
+  font-weight: bold;
+}
+.container-city {
+  width: 60%;
+  /* padding: 10px 12px;*/
+  padding-left: 400px;
+  margin: 8px 0;
+  font-size: 1em;
+  transition: border-color 0.2s;
+}
+.button {
+  background-color: #111111;
+  border: solid 2px #09c593;
+  color: #f3f7f6;
+}
+
+/* ESTILOS TARJETAS SECCION SOBRE NOSOTRAS*/
+.tarjetaN {
+  display: inline-block;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0.5, 0.5, 0.5, 0.5);
+  margin: 10px;
+  width: 250px;
+}
+
+.tarjeta_completa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.avatar img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border-color: black 5px;
+}
+
+.data {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.data h3 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  color: #09c593;
+}
+
+.data p {
+  margin: 5px 0;
+  font-size: 14px;
+  font-family: cursive;
+}
+
+.data p b {
+  font-weight: bold;
+  color: lightsteelblue;
+}
+
+/* Contenedor principal */
+.containerN {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+}
+
+/* PARA EL FORMULARIO DE CONTACTANOS */
+.formContacto {
+  width: 500px;
+  padding: 50px;
+  border-radius: 30px;
+  margin: auto;
+  background-color: #ccc;
+  color: #09c593;
+}
+
+.labelContacto {
+  font-weight: bold;
+}
+
+.inputContacto[type="text"],
+.inputContacto[type="email"] {
+  width: 100%;
+  padding: 3px 10px;
+  border: 1px solid #f6f6f6;
+  border-radius: 100px;
+  background-color: #f6f6f6;
+  margin: 8px 0;
+  display: block;
+}
+
+.buttonContacto[type="submit"] {
+  width: 100%;
+  padding: 8px 16px;
+  margin-top: 32px;
+  border: 2px solid;
+  border-radius: 100px;
+  display: block;
+  background-color: lightgray;
+  font-weight: bold;
+  color: #09c593;
+  cursor: pointer;
+}
+
+.buttonContacto:hover {
+  background-color: rgb(16, 16, 16);
+  color: #09c593;
+}
+
+.textAreaContacto {
+  width: 100%;
+  height: 150px;
+  border: 1px solid #f6f6f6;
+  border-radius: 15px;
+  background-color: #f6f6f6;
+  margin: 8px 0;
+  resize: none;
+  display: block;
+}
+/* FIN DEL FORMULARIO DE CONTACTANOS */
+
+/* PARA EL POPUP DE CONTACTANOS */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: darkgray;
+  padding: 20px;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.popup-button {
+  font-weight: bold;
+  background-color: lightgray;
+  border-radius: 20px;
+  font-size: 150%;
+}
+.popup-button:hover {
+  background-color: #09c593;
+  font-weight: bold;
+}
+/* FIN DEL POPUP DE CONTACTANOS */
+
+.logo {
+  border-radius: 50%;
+  margin-bottom: 20px; 
+  max-width: 100%;
+  height: auto;
+  display: block; 
+}
+
+.containerinicio{
+  display: flex;
+  flex-direction: column; /* Apila los elementos en columna */
+  align-items: center;    /* Centra los elementos horizontalmente */
+  justify-content: center; /* Centra los elementos verticalmente en la pantalla */
+  height: 100vh;          /* Hace que el contenedor ocupe toda la altura de la pantalla */
+  width: 100%;            /* Ancho completo */
+  box-sizing: border-box; /* Incluye padding y border en el tamaño */
+}
+
+.row.tarjeta-clima {
+  display: flex; /* Para poner las tarjetas en fila */
+  gap: 20px; /* Espacio entre las tarjetas, ajusta a tu gusto */
+  flex-wrap: nowrap; /* Para que no hagan wrap, si quieres que sí hagan wrap, cambia a 'wrap' */
+  justify-content: center; /* Centra las tarjetas en el contenedor */
+  margin-top: 20px; /* Espacio superior */
+}
+
+/* Estilo para cada tarjeta individual */
+.card {
+  background-color: #ffffff; /* Fondo blanco, puedes cambiarlo */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(123, 209, 102, 0.1); /* Sombra suave */
+  padding: 15px;
+  width: 400px; /* Ancho fijo, ajusta según prefieras */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.5s; /* Para efecto al pasar el mouse */
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Pequeña elevación al pasar el mouse */
+}
+
+/* Estilo para la lista dentro de la tarjeta */
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* Estilo para los elementos de la lista */
+.card li {
+  margin-bottom: 10px;
+}
+
+/* Estilo para la temperatura */
+.temperatura {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 5px 0;
+  color: #333;
+}
+
+/* Estilo para el icono del clima */
+.icono {
+  margin: 10px 0;
+  width: 100px;
+}
+
+/* Estilo para la descripción del clima */
+.descripcion {
+  font-size: 14px;
+  color: #666;
+  font-weight: bold;
+}
+.datapais{
+  font-size: 25px;
+  color: #101010;
+  font-weight: bold;
+  text-align: center;
+}

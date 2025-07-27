@@ -1,0 +1,59 @@
+[
+    {
+        "id": 1,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7vlZhVsJ5U_ivLDgR_M8NOlieMzd_phYJqg030e1agZw-Oa3_PYFo3sB2BrPJY5j7GdQ&usqp=CAU",
+        "nombre": "Gloria Carmona",
+        "github": "https://github.com/glocarm",
+        "ocupación": "Docente",
+        "meta": "Desarrolladora FullStack"
+    },
+    {
+        "id": 2,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-nVFXisOaBh6WF5T3-pAfYxZAVQMN3SylMugx0oG61iqtsJZg5mulBbBDTTDmjwPDEe0&usqp=CAU",
+        "nombre": "Ana Tavera",
+        "github": "https://github.com/antaver",
+        "ocupación": "Emprendedora",
+        "meta": "Desarrolladora FullStack"
+    },
+    {
+        "id": 3,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScqcm4242yBUTbHR_u8wWm0K_svMhaN_KVH1pMWonEolOO8NSEk5CnZA3lo0oVqO1HXFU&usqp=CAU",
+        "nombre": "Eileen Palacios",
+        "github": "https://github.com/EiP",
+        "ocupación": "Niñera",
+        "meta": "Desarrolladora FullStack"
+    },
+    {
+        "id": 4,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz9B-oyH6zK2gV4CUcWOObftzjd7Sz-NWkuXxvH0r7rMwLp1h1zlYpH-40PqHaJJI76P4&usqp=CAU",
+        "nombre": "Marilin Vargas",
+        "github": "https://github.com/vargasvargas",
+        "ocupación": "Emprendedora",
+        "meta": "Desarrolladora FullStack"
+    },
+    {
+        "id": 5,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlnxEf9jXIcym59XTBmSDFAjYNO_6rTpmxXX2C6eGip_GyxkMItUHFG1bPJrnId7ONI8g&usqp=CAU",
+        "nombre": "Anielsa Tunes",
+        "github": "https://github.com/Anitoon",
+        "ocupación": "Gastronómico",
+        "meta": "Desarrolladora FullStack"
+    },
+    {
+        "id": 6,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKXkrJucnJ3Hhf5vJKMhZmd4prR0EvmJo72h46jHV4BWCh_SOHOh-xnrPWQU1JS7KNPY&usqp=CAU",
+        "nombre": "Camila Pons",
+        "github": "https://github.com/camila",
+        "ocupación": "Tester QA",
+        "meta": "Desarrolladora FullStack"
+    },
+    {
+        "id": 7,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-nVFXisOaBh6WF5T3-pAfYxZAVQMN3SylMugx0oG61iqtsJZg5mulBbBDTTDmjwPDEe0&usqp=CAU",
+        "nombre": "July Nunes",
+        "github": "https://github.com/nunes",
+        "ocupación": "Contadora",
+        "meta": "Desarrolladora FullStack"
+    }
+    
+]
