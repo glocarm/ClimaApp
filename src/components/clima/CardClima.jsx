@@ -1,4 +1,4 @@
-import React, {useState , useEffect} from 'react';
+import React, {useState } from 'react';
 import Form from '../formciudad/Form';
 import '../../assets/css/App.css';
 import CardForecast from './CardForecast';
@@ -8,6 +8,7 @@ const CardClima = () =>{
   const getLocation = async (loc) => {
     setLoading(true);
     setLocation(loc);  
+    loading();
   }
   return (
     <React.Fragment>
