@@ -205,15 +205,16 @@ body {
 
 /* Estilo para cada tarjeta individual */
 .card {
-  background-color: #ffffff; /* Fondo blanco, puedes cambiarlo */
-  border-radius: 10px; /* Bordes redondeados */
-  box-shadow: 0 4px 8px rgba(123, 209, 102, 0.1); /* Sombra suave */
-  padding: 15px;
+  background-color:#0a0a0a ;  /* #ffffff;*/
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(123, 209, 102, 0.1); 
+  padding: 5px;
   width: 400px; /* Ancho fijo, ajusta según prefieras */
   display: flex;
   flex-direction: column;
   align-items: center;
   transition: transform 0.5s; /* Para efecto al pasar el mouse */
+  color: #09c593;
 }
 
 .card:hover {
@@ -239,7 +240,7 @@ body {
   font-size: 14px;
   font-weight: bold;
   margin: 5px 0;
-  color: #333;
+
 }
 
 /* Estilo para el icono del clima */
@@ -251,12 +252,12 @@ body {
 /* Estilo para la descripción del clima */
 .descripcion {
   font-size: 14px;
-  color: #666;
+  color: #09c593;
   font-weight: bold;
 }
 .datapais{
   font-size: 25px;
-  color: #101010;
+  color: #09c593;
   font-weight: bold;
   text-align: center;
 }

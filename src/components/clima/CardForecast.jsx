@@ -26,7 +26,24 @@ const CardForecast = (props) => {
     const mes = String(fecha.getMonth() + 1).padStart(2, '0'); // Los meses empiezan en 0
     const año = fecha.getFullYear();
     return `${dia}-${mes}-${año}`;
-};
+  };
+ // Función para obtener el día de la semana en español a partir de una fecha en formato dd-mm-aaaa
+  const obtenerDiaSemana = (fechaDDMMAAAA) => {
+    const [dia, mes, año] = fechaDDMMAAAA.split('-');
+    // Crear un objeto Date con los componentes
+    const fecha = new Date(`${año}-${mes}-${dia}`);
+    const diasSemana = [
+      'Domingo',
+      'Lunes',
+      'Martes',
+      'Miércoles',
+      'Jueves',
+      'Viernes',
+      'Sábado'
+    ];
+    return diasSemana[fecha.getDay()];
+  };
+ 
   return (
     <div className="containerP">
       {ciudad && (
@@ -36,27 +53,33 @@ const CardForecast = (props) => {
           <p className="datapais">{pais}</p>
           <div className="row tarjeta-clima">
             {pronostico &&
-              pronostico.map((item) => (
-                <div className="card">
-                  <ul>
-                    <li key={item.date}>
-                      <p>{formatearFecha(item.date)}</p>
-                      <p className="temperatura">
-                        Máx: {item.day.maxtemp_c} ºC
-                      </p>
-                      <p className="temperatura">
-                        Mín: {item.day.mintemp_c} ºC
-                      </p>
-                      <img
-                        src={item.day.condition.icon}
-                        className="icono"
-                        alt="Icono Tiempo"
-                      />
-                      <p className="descripcion">{item.day.condition.text}</p>{" "}
-                    </li>
-                  </ul>
-                </div>
-              ))}
+              pronostico.map((item) => {
+                const fechaFormateada = formatearFecha(item.date);
+                const diaSemana = obtenerDiaSemana(fechaFormateada);
+                return (
+                  <div className="card" key={item.date}>
+                    <ul>
+                      <li>
+                        {/* Mostrar día de la semana junto a la fecha */}
+                         <p className="temperatura">{diaSemana}</p>
+                        <p>{fechaFormateada}</p>
+                        <p className="temperatura">
+                          Máx: {item.day.maxtemp_c} ºC
+                        </p>
+                        <p className="temperatura">
+                          Mín: {item.day.mintemp_c} ºC
+                        </p>
+                        <img
+                          src={item.day.condition.icon}
+                          className="icono"
+                          alt="Icono Tiempo"
+                        />
+                        <p className="descripcion">{item.day.condition.text}</p>
+                      </li>
+                    </ul>
+                  </div>
+                );
+              })}
           </div>
         </div>
       )}
